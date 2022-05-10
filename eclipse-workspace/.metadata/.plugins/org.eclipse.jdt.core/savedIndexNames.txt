@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+/Users/mfbaker201/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+2378800539.index
+1865797976.index
+2470476600.index
+3362192072.index
+843335400.index

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+   <head>
+      <style>
+         table {
+            font-size: 18pt;
+         }
+      </style>
+      <script type = "text/javascript" 
+      src = "{{ url_for('static', filename = 'checkout.js') }}" ></script>
+   </head>
+   <body>
+      <h1>Shopping Cart</h1>
+      <table>
+         {% for key, value in cart.items() %}
+            <tr>
+               <th> {{ key }} </th>
+            </tr>
+         {% endfor %}
+         </table>
+      <form action = "http://localhost:5000/checkout" method = "POST">
+         <input type = "button" onclick = "checkout()" value = "checkout" />
+      </form>
+   </body>
+</html>
